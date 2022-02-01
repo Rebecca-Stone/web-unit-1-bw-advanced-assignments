@@ -24,6 +24,7 @@ const diarrehea = document.querySelector(".diarrehea");
 const questions = document.querySelector(".questions");
 const end = document.querySelector(".end");
 const text = document.querySelector("#text");
+const results = document.querySelector("#results");
 
 // array to return answers
 const userAnswersList = {
@@ -35,8 +36,6 @@ const userAnswersList = {
   diarrehea: false,
 };
 
-const i = [];
-i.push(userAnswersList);
 // First Question
 coughYes.addEventListener("click", function () {
   userAnswersList.cough = true;
@@ -97,25 +96,62 @@ vomitingNo.addEventListener("click", function () {
   diarrehea.style.display = "block";
 });
 
+// function for the user answers
+let finalResults = "";
+function getResults(){
+  let coughResults = "";
+  let soreThroatResults = "";
+  let runnyNoseResults = "";
+  let feverResults = "";
+  let vomitingResults = "";
+  let diarreheaResults = "";
+  if(userAnswersList.cough === true){
+    coughResults = "Cough";
+  };
+  if(userAnswersList.soreThroat === true){
+    soreThroatResults = "Sore Throat";
+  } else if(userAnswersList.soreThroat === false){
+    soreThroatResults = "No Sore Throat";
+  };
+  if(userAnswersList.runnyNose === true){
+    runnyNoseResults = "Runny Nose";
+  }else if(userAnswersList.runnyNose === false){
+    runnyNoseResults = "No Runny Nose";
+  };
+  if(userAnswersList.fever === true){
+    feverResults = "Fever";
+  }else if(userAnswersList.fever === false){
+    feverResults = "No Fever";
+  };
+  if(userAnswersList.vomiting === true){
+    vomitingResults = "Has been Vomiting";
+  }else if(userAnswersList.vomiting === false){
+    vomitingResults = "Has Not Vomited";
+  };
+  if(userAnswersList.diarrehea === true){
+    diarreheaResults = "Has Diarrehea";
+  }else if(userAnswersList.diarrehea === false){
+    diarreheaResults = "Has Not Had Diarrehea";
+  };
+  finalResults = `Symptoms: ${coughResults}, ${soreThroatResults}, ${runnyNoseResults}, ${feverResults}, ${vomitingResults}, ${diarreheaResults}.`;
+  return finalResults;
+};
+
 // Sixth Question
 diarreheaYes.addEventListener("click", function () {
   userAnswersList.diarrehea = true;
+  getResults();
   diarrehea.style.display = "none";
   text.style.display = "none";
   end.style.display = "block";
+  results.innerHTML = `${finalResults}`;
 });
 
+// displays the end
 diarreheaNo.addEventListener("click", function () {
   diarrehea.style.display = "none";
+  getResults();
   text.style.display = "none";
   end.style.display = "block";
-  userAnswersList.style.display = "block";
-});
-
-// const for answer button
-const answers = document.querySelector(".answers");
-
-// function to return the answers
-answers.addEventListener("click", function () {
-
+  results.innerHTML = `${finalResults}`;
 });

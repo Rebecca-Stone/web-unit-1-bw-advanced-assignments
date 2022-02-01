@@ -146,7 +146,7 @@ section {
 }
 /* for background images */
 body {
-  background-image: url(/undraw_doctor_kw-5-l.svg);
+  background-image: url(undraw_doctor_kw-5-l.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -242,23 +242,18 @@ li {
   display: none;
 }
 
-button{
-    border-radius: 10px;
-    font-size: 1.6rem;
+.end #results {
+  text-align: left;
+  font-size: 2rem;
+  padding: 2.5%;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 1.6rem;
 }
 
 button a {
-    text-decoration: none;
-    color: black;
-}
-
-.userAnswerList {
-  font-size: 3rem;
-  width: 20%;
-  margin-top: 8%;
-  margin-left: 40%;
-  text-align: center;
-  background-color: rgba(222, 215, 236, 0.815);
-  border-radius: 10px;
-  display: none;
+  text-decoration: none;
+  color: black;
 }
