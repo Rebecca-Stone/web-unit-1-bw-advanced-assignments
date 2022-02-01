@@ -152,13 +152,19 @@ section {
     background-size: cover;
 } */
 
+/* styles for the background color to change */
+
+#wrapper {
+  background-color: white;
+  color: black;
+}
 /* styles for the top div and mode buttons */
 .top {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.top h1{
+.top h1 {
   width: 100%;
   text-align: center;
   padding: 2%;
@@ -200,12 +206,12 @@ h2 {
 }
 
 /* styles for the footer content */
-footer{
+footer {
   padding: 2%;
   border-top: 2px solid black;
   background-color: rgb(122, 21, 216);
 }
-nav{
+nav {
   display: flex;
   justify-content: space-evenly;
 }
@@ -217,8 +223,3 @@ nav a {
 
 /* you need to implement styles for your dark and your light theme */
 /* which will be the default? up to you */
-
-/* body {
-  background-color: black;
-  color: aliceblue;
-} */
