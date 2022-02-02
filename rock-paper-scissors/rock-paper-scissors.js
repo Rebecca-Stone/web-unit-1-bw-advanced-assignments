@@ -54,7 +54,7 @@ function getComputerChoice(computerChoice) {
     computerDisplay.className = "fas fa-hand-scissors";
     computer = "scissors";
   }
-}
+};
 // you need a function for win/loss/tie scenarios
 
 // you need an if/else if/else statement for each case of the game and to invoke the correct functions in each case

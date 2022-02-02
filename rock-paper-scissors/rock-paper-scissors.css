@@ -138,7 +138,7 @@ table {
 /* border needs to be commented out after editing */
 * {
   box-sizing: border-box;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   max-width: 100%;
 }
 
@@ -149,7 +149,7 @@ section {
 }
 /* for background images */
 body {
-  background-image: url(pexels-dom-j-310452.jpg);
+  background-image: url(crinkle\ background.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -168,7 +168,7 @@ header {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 192, 203, 0.534);
+  background-color: rgba(216, 191, 143, 0.664);
   border-radius: 10px;
 }
 
@@ -218,7 +218,7 @@ header {
 #scissors {
   margin: 2%;
   font-size: 6rem;
-  background-color: pink;
+  background-color: rgba(216, 191, 143, 0.664);
   border-radius: 10px;
 }
 #allResults {
@@ -257,7 +257,7 @@ header {
    text-align: center;
 }
 .restButton{
-  background-color: rgba(255, 192, 203, 0.534);
+  background-color: rgba(216, 191, 143, 0.664);
   border-radius: 10px;
 }
 .restButton a {
