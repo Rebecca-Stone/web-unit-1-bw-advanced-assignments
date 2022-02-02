@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>Advanced Assignments - Rock Paper Scissors</title>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="rock-paper-scissors.css" />
@@ -19,20 +18,24 @@
       <h1>Rock, Paper, Scissors</h1>
       <h2>Will You Win?</h2>
     </header>
-
     <!-- make an area to display the human score and computer score -->
     <div class="scoreCount">
       <div class="userScore">
         <h1>Your Score</h1>
-        <h2 class="scoreKeepUser">(score)</h2>
+        <h2 class="scoreKeepUser"></h2>
       </div>
       <div class="computerScore">
         <h1>Computer Score</h1>
-        <h2 class="scoreKeepComp">(score)</h2>
+        <h2 class="scoreKeepComp"></h2>
       </div>
     </div>
     <!-- make an area to display your move and the computer's move -->
-    <section id="photoArea">
+    <section id="allResults">
+      <div class="resultDisplay" id="top">
+        <div class="win">You Win!</div>
+        <div class="lose">You Lose!</div>
+        <div class="tie">It's a Tie</div>
+      </div>
       <div class="userChoice" id="left"></div>
       <div class="compChoice" id="right"></div>
     </section>
@@ -41,6 +44,11 @@
       <button class="fas fa-hand-rock" id="rock"></button>
       <button class="fas fa-hand-paper" id="paper"></button>
       <button class="fas fa-hand-scissors" id="scissors"></button>
+    </div>
+    <div class="rest">
+      <button class="restButton">
+        <a href="/rock-paper-scissors/rock-paper-scissors.html">Rest Game</a>
+      </button>
     </div>
   </body>
 </html>
